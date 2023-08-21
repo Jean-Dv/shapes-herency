@@ -8,7 +8,7 @@ public class Circle extends Figure {
     public void changeSize(int newDiameter) {}
 
     @Override
-    public void redraw() {
+    public void draw() {
 
     }
 

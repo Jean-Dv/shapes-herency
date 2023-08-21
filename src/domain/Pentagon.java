@@ -9,7 +9,7 @@ public class Pentagon extends Figure {
     public void changeSize(int newWidth, int newHeight) {}
 
     @Override
-    public void redraw() {
+    public void draw() {
 
     }
 

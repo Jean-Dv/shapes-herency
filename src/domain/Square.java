@@ -8,7 +8,7 @@ public class Square extends Figure {
     public void changeSize(int newSize) {}
 
     @Override
-    public void redraw() {
+    public void draw() {
 
     }
 

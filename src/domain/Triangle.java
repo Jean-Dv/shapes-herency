@@ -9,7 +9,7 @@ public class Triangle extends Figure {
     public void changeSize(int newHeight, int newWidth) {}
 
     @Override
-    public void redraw() {
+    public void draw() {
 
     }
 

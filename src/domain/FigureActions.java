@@ -1,6 +1,6 @@
 package domain;
 
 public interface FigureActions {
-    void redraw();
+    void draw();
     void erase();
 }
