@@ -3,16 +3,50 @@ package domain;
 import java.awt.Point;
 
 public abstract class Figure implements FigureActions {
-    private Point point;
-    private boolean isVisible;
-    private String color;
-    public void makeVisible() {}
-    public void makeInvisible() {}
-    public void moveRight() {}
-    public void moveLeft() {}
-    public void moveUp() {}
-    public void moveDown() {}
-    public void moveHorizontal(int distance) {}
-    public void moveVertical(int distance) {}
-    public void changeColor(String newColor) {}
+    protected Point point;
+    protected boolean isVisible;
+    protected String color;
+
+    public void makeVisible() {
+        isVisible = true;
+        draw();
+    }
+
+    public void makeInvisible() {
+        erase();
+        isVisible = false;
+    }
+
+    public void moveRight() {
+        moveHorizontal(50);
+    }
+
+    public void moveLeft() {
+        moveHorizontal(-50);
+    }
+
+    public void moveUp() {
+        moveVertical(-50);
+    }
+
+    public void moveDown() {
+        moveVertical(50);
+    }
+
+    public void moveHorizontal(int distance) {
+        erase();
+        point.x += distance;
+        draw();
+    }
+
+    public void moveVertical(int distance) {
+        erase();
+        point.y += distance;
+        draw();
+    }
+
+    public void changeColor(String newColor) {
+        color = newColor;
+        draw();
+    }
 }
