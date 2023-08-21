@@ -1,9 +1,27 @@
 package application;
 
-import domain.Figure;
+import domain.*;
 
 public class FigureFactory {
     public Figure getFigure(String shape) {
-        return null;
+        Figure figure = null;
+        switch (shape) {
+            case "circle" -> {
+                figure = new Circle();
+            }
+            case "triangle" -> {
+                figure = new Triangle();
+            }
+            case "square" -> {
+                figure = new Square();
+            }
+            case "pentagon" -> {
+                figure = new Pentagon();
+            }
+            default -> {
+                return null;
+            }
+        }
+        return figure;
     }
 }
