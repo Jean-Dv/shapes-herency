@@ -5,7 +5,7 @@ import java.awt.Point;
 /**
  * Parent class that contains the methods that can be used in the figures
  *
- * @author camilaF20 (Camila Figigueredo)
+ * @author camilaF20 (Camila Figueredo)
  * @author Jean-Dv (Jean Valencia)
  */
 public abstract class Figure implements FigureActions {
