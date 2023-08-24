@@ -4,6 +4,9 @@ import domain.*;
 
 import java.util.Scanner;
 
+/**
+ * The Runner class provides a simple interactive menu for managing geometric figures.
+ */
 public class Runner {
     FigureFactory figureFactory = new FigureFactory();
     Scanner scanner = new Scanner(System.in);
@@ -16,11 +19,19 @@ public class Runner {
             "white"
     };
 
+    /**
+     * The entry point of the application. Creates an instance of Runner and calls the mainMenu method.
+     *
+     * @param args The command-line arguments.
+     */
     public static void main(String[] args) {
         Runner runner = new Runner();
         runner.mainMenu();
     }
 
+    /**
+     * Displays the main menu and handles user input to create and manage figures.
+     */
     public void mainMenu() {
         String menu = """
                 1. Circle
@@ -66,6 +77,11 @@ public class Runner {
 
     }
 
+    /**
+     * Displays the menu for managing a given figure and handles user input to perform actions on the figure.
+     *
+     * @param figure The figure to be managed.
+     */
     public void manageFigure(Figure figure) {
         String menu = """
                 What action do you want to perform?
