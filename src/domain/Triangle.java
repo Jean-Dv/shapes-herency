@@ -1,11 +1,19 @@
 package domain;
 
 import java.awt.*;
-
+/**
+ * A triangle that can be manipulated and that draws itself on a canvas.
+ *
+ * @author  Michael Kölling and David J. Barnes
+ * @version 1.0  (15 July 2000)
+ */
 public class Triangle extends Figure {
     private int width;
     private int height;
 
+    /**
+     * A new triangle is created in the default position, with the default color
+     */
     public Triangle() {
         width = 300;
         height = 300;
@@ -14,6 +22,11 @@ public class Triangle extends Figure {
         isVisible = false;
     }
 
+    /**
+     * Overwrite the method with the new size of the triangle
+     * @param newHeight new figure width size
+     * @param newWidth new figure height size
+     */
     @Override
     public void changeSize(int newHeight, int newWidth) {
         erase();
@@ -22,6 +35,9 @@ public class Triangle extends Figure {
         draw();
     }
 
+    /**
+     * Draw the square with current specifications on screen.
+     */
     @Override
     public void draw() {
         if (isVisible) {
@@ -33,6 +49,9 @@ public class Triangle extends Figure {
         }
     }
 
+    /**
+     * Erase the square on screen.
+     */
     @Override
     public void erase() {
         if (isVisible) {
