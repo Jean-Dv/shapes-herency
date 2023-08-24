@@ -6,7 +6,7 @@ import domain.*;
  * The FigureFactory class provides the call of
  * constructors to interact with the user.
  *
- * @author camila
+ * @author camilaF20 (Camila Figueredo)
  * @author Jean-Dv (Jean Valencia)
  */
 public class FigureFactory {
